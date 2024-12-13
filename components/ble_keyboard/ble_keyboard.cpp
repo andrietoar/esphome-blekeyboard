@@ -100,7 +100,7 @@ void Esp32BleKeyboard::press(MediaKeyReport key, bool with_timer) {
     }
     bleKeyboard.press(key);
     delay(100);
-    bleKeyboard.releaseAll();
+    bleKeyboard.release();
   }
 }
 
